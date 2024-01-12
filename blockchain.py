@@ -1,7 +1,8 @@
 from web3 import Web3
 import requests
+import config
 
-url = 'https://rpc.ansybl.io/canto/mainnet/evm_rpc/?X-API-KEY=1e2da94585e79feeb984d656'
+url = f'https://rpc.ansybl.io/canto/mainnet/evm_rpc/?X-API-KEY={config.API_KEY}'
 w3 = Web3(Web3.HTTPProvider(url))
 
 

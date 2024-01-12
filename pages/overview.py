@@ -16,8 +16,7 @@ layout = html.Div(children=[
     ]),
     html.Div(children=[
         html.Br(),
-        html.H2('Market Stats'),
-        html.Br(),
+        html.H4('Market Stats'),
         html.B('Total Supply: '), html.Span(id='total-supply'),
         html.Br(), html.Br(),
         html.B('Earning: '), html.Span(id='earning'),

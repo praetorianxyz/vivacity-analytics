@@ -17,7 +17,7 @@ app.layout = html.Div([
     ),
     dcc.Interval(
         id='interval-component',
-        interval=10*1000,  # Update every 1 hour (3600 seconds)
+        interval=60*60*1000,  # Update every 1 hour (3600 seconds)
         n_intervals=0
     ),
     dash.page_container,
