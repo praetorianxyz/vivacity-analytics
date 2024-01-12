@@ -8,7 +8,7 @@ dash.register_page(__name__, path='/', name='Overview', order=0)
 layout = html.Div(children=[
     html.Div(children=[
         html.H2('Overview'),
-        'Vivacity is an RWA lending market on Canto.',
+        'Vivacity is an RWA lending market on Canto. Test',
         html.Br(), html.Br(),
         'Users can supply NOTE to earn interest.',
         html.Br(), html.Br(),
