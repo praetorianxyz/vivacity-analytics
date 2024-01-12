@@ -2,9 +2,7 @@ from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
 from callbacks import get_callbacks
 import dash
-import plotly.express as px
 
-px.defaults.template = 'ggplot2'
 
 external_css = ['https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css', ]
 

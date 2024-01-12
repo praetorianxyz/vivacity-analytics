@@ -16,7 +16,7 @@ canto_price_usd = response.json()['canto']['usd']
 ### Load cNOTE data from blockchain
 contract_address_cnote = '0xEe602429Ef7eCe0a13e4FfE8dBC16e101049504C'
 
-with open('vivacity-analytics/abis/cnote-contract-abi.txt', 'r') as f:
+with open('abis/cnote-contract-abi.txt', 'r') as f:
     contract_abi_cnote = f.read()
 
 contract_cnote = w3.eth.contract(address=contract_address_cnote, abi=contract_abi_cnote)
@@ -39,7 +39,7 @@ contract_data_cnote = get_data_from_contract_cnote()
 ### Load vcNOTE data from blockchain
 contract_address_vcnote = '0x74c6dBA944702007e3a18C2caad9F6F274cF38dD'
 
-with open('vivacity-analytics/abis/vcnote-contract-abi.txt', 'r') as f:
+with open('abis/vcnote-contract-abi.txt', 'r') as f:
     contract_abi_vcnote = f.read()
 
 contract_vcnote = w3.eth.contract(address=contract_address_vcnote, abi=contract_abi_vcnote)
@@ -76,7 +76,7 @@ interest_rate_model_vcnote = {
 ### Load chyVWEAX data from blockchain
 contract_address_chyvweax = '0x6812636BF088798cB568D04F2dB4D2f34B039E11'
 
-with open('vivacity-analytics/abis/chyvweax-contract-abi.txt', 'r') as f:
+with open('abis/chyvweax-contract-abi.txt', 'r') as f:
     contract_abi_chyvweax = f.read()
 
 contract_chyvweax = w3.eth.contract(address=contract_address_chyvweax, abi=contract_abi_chyvweax)
@@ -99,7 +99,7 @@ contract_data_chyvweax = get_data_from_contract_chyvweax()
 ### Load data from Price Oracle Router
 contract_address_oracle = '0xFFFa8184EE41D7Ecf830b6e7A046C838747709C3'
 
-with open('vivacity-analytics/abis/oracle-contract-abi.txt', 'r') as f:
+with open('abis/oracle-contract-abi.txt', 'r') as f:
     contract_abi_oracle = f.read()
 
 contract_oracle = w3.eth.contract(address=contract_address_oracle, abi=contract_abi_oracle)
@@ -118,7 +118,7 @@ contract_data_oracle_chyvweax = get_data_from_contract_oracle(contract_address_c
 ### Load reward information from blockchain
 contract_address_rewards = '0x85156B45B3C0F40f724637ebfEB035aFB29BD083'
 
-with open('vivacity-analytics/abis/rewards-contract-abi.txt', 'r') as f:
+with open('abis/rewards-contract-abi.txt', 'r') as f:
     contract_abi_rewards = f.read()
 
 contract_rewards = w3.eth.contract(address=contract_address_rewards, abi=contract_abi_rewards)
