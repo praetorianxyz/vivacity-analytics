@@ -111,5 +111,5 @@ def get_callbacks(app):
         collateral_vweax = (blockchain_data['chyVWEAX']['total_supply'] * blockchain_data['chyVWEAX']['underlying_price']) / 10**(18*2)
         # collateral_percent = ...
         total_collateral = collateral_vweax
-
+        
         return f'${total_collateral:,.0f}',
